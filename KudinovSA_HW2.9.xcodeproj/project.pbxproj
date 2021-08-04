@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F5956DEE86B2691A01A4414 /* Pods_KudinovSA_HW2_9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923EC1F15A7DAA922972BDC0 /* Pods_KudinovSA_HW2_9.framework */; };
 		C52E333226BB1F37000691FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E333126BB1F37000691FB /* AppDelegate.swift */; };
 		C52E333426BB1F37000691FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E333326BB1F37000691FB /* SceneDelegate.swift */; };
 		C52E333626BB1F37000691FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E333526BB1F37000691FB /* ViewController.swift */; };
 		C52E333926BB1F37000691FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52E333726BB1F37000691FB /* Main.storyboard */; };
 		C52E333B26BB1F38000691FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52E333A26BB1F38000691FB /* Assets.xcassets */; };
 		C52E333E26BB1F38000691FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52E333C26BB1F38000691FB /* LaunchScreen.storyboard */; };
+		C52E334626BB3641000691FB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E334526BB3641000691FB /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		923EC1F15A7DAA922972BDC0 /* Pods_KudinovSA_HW2_9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KudinovSA_HW2_9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52E332E26BB1F37000691FB /* KudinovSA_HW2.9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KudinovSA_HW2.9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52E333126BB1F37000691FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C52E333326BB1F37000691FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		C52E333A26BB1F38000691FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C52E333D26BB1F38000691FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C52E333F26BB1F38000691FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C52E334526BB3641000691FB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DE17B1AB6A4610EF71D1C1A5 /* Pods-KudinovSA_HW2.9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KudinovSA_HW2.9.release.xcconfig"; path = "Target Support Files/Pods-KudinovSA_HW2.9/Pods-KudinovSA_HW2.9.release.xcconfig"; sourceTree = "<group>"; };
+		F8F083AFCC8FD41E9975C0CF /* Pods-KudinovSA_HW2.9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KudinovSA_HW2.9.debug.xcconfig"; path = "Target Support Files/Pods-KudinovSA_HW2.9/Pods-KudinovSA_HW2.9.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5956DEE86B2691A01A4414 /* Pods_KudinovSA_HW2_9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F7F95AD38570BCFF38F8B7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				923EC1F15A7DAA922972BDC0 /* Pods_KudinovSA_HW2_9.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49661E7AAB6E53AB58E4E59B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8F083AFCC8FD41E9975C0CF /* Pods-KudinovSA_HW2.9.debug.xcconfig */,
+				DE17B1AB6A4610EF71D1C1A5 /* Pods-KudinovSA_HW2.9.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C52E332526BB1F37000691FB = {
 			isa = PBXGroup;
 			children = (
 				C52E333026BB1F37000691FB /* KudinovSA_HW2.9 */,
 				C52E332F26BB1F37000691FB /* Products */,
+				49661E7AAB6E53AB58E4E59B /* Pods */,
+				0F7F95AD38570BCFF38F8B7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,56 @@
 		C52E333026BB1F37000691FB /* KudinovSA_HW2.9 */ = {
 			isa = PBXGroup;
 			children = (
-				C52E333126BB1F37000691FB /* AppDelegate.swift */,
-				C52E333326BB1F37000691FB /* SceneDelegate.swift */,
-				C52E333526BB1F37000691FB /* ViewController.swift */,
-				C52E333726BB1F37000691FB /* Main.storyboard */,
-				C52E333A26BB1F38000691FB /* Assets.xcassets */,
-				C52E333C26BB1F38000691FB /* LaunchScreen.storyboard */,
-				C52E333F26BB1F38000691FB /* Info.plist */,
+				C52E334B26BB4141000691FB /* Services */,
+				C52E334A26BB4128000691FB /* ViewControllers */,
+				C52E334926BB411B000691FB /* Storyboards */,
+				C52E334826BB4103000691FB /* Resources */,
+				C52E334726BB40F8000691FB /* Models */,
 			);
 			path = KudinovSA_HW2.9;
+			sourceTree = "<group>";
+		};
+		C52E334726BB40F8000691FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C52E334526BB3641000691FB /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C52E334826BB4103000691FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C52E333A26BB1F38000691FB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C52E334926BB411B000691FB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C52E333C26BB1F38000691FB /* LaunchScreen.storyboard */,
+				C52E333726BB1F37000691FB /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C52E334A26BB4128000691FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C52E333526BB1F37000691FB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C52E334B26BB4141000691FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C52E333126BB1F37000691FB /* AppDelegate.swift */,
+				C52E333F26BB1F38000691FB /* Info.plist */,
+				C52E333326BB1F37000691FB /* SceneDelegate.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C52E334226BB1F38000691FB /* Build configuration list for PBXNativeTarget "KudinovSA_HW2.9" */;
 			buildPhases = (
+				6AD69F0BADBD291005737BF9 /* [CP] Check Pods Manifest.lock */,
 				C52E332A26BB1F37000691FB /* Sources */,
 				C52E332B26BB1F37000691FB /* Frameworks */,
 				C52E332C26BB1F37000691FB /* Resources */,
+				C7BDCF4600C43B704958DEEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +201,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6AD69F0BADBD291005737BF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KudinovSA_HW2.9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BDCF4600C43B704958DEEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KudinovSA_HW2.9/Pods-KudinovSA_HW2.9-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KudinovSA_HW2.9/Pods-KudinovSA_HW2.9-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KudinovSA_HW2.9/Pods-KudinovSA_HW2.9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C52E332A26BB1F37000691FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +251,7 @@
 				C52E333626BB1F37000691FB /* ViewController.swift in Sources */,
 				C52E333226BB1F37000691FB /* AppDelegate.swift in Sources */,
 				C52E333426BB1F37000691FB /* SceneDelegate.swift in Sources */,
+				C52E334626BB3641000691FB /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +395,13 @@
 		};
 		C52E334326BB1F38000691FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F083AFCC8FD41E9975C0CF /* Pods-KudinovSA_HW2.9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 754D6797UK;
-				INFOPLIST_FILE = KudinovSA_HW2.9/Info.plist;
+				INFOPLIST_FILE = KudinovSA_HW2.9/Services/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +415,13 @@
 		};
 		C52E334426BB1F38000691FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE17B1AB6A4610EF71D1C1A5 /* Pods-KudinovSA_HW2.9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 754D6797UK;
-				INFOPLIST_FILE = KudinovSA_HW2.9/Info.plist;
+				INFOPLIST_FILE = KudinovSA_HW2.9/Services/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
